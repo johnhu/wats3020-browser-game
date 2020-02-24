@@ -157,7 +157,7 @@ checkForWinner() {
     let drawEvent = new Event('draw');
 
     // TODO: Dispatch the `drawEvent` event.
-    document.dispatchEvent(drawEvent());
+    document.dispatchEvent(drawEvent);
 
   }
 }
@@ -354,7 +354,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     // TODO: Inside the `startButton` event listener, instantiate a new
     // instance of the `TicTacToe` class and save it as a variable called
     // `game`.
-    var game = new TicTacToe();
+    game = new TicTacToe();
     // TODO: Call the `start()` method of the `game` object you just created.
     game.start();
   });
